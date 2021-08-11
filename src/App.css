@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  display:flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app .main{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(211, 211, 211, 0.281);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* sideBar Css */
+
+.sidebar{
+  width: 70px;
+  height:100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #fafafa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar .icon{
+ /* border-bottom: 2px solid #d6c9c9; */
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 10px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar .icon:hover{
+  background-color: rgba(173, 216, 230, 0.486);
+  border-left:4px solid rgb(58, 111, 129) ;
 }
+
+.sidebar .icon p{
+  font-size: xx-small;
+}
+
+
+.sidebar .icon .MuiSvgIcon-root{
+  font-size: 30px;
+  color: rgb(100, 100, 100);
+  ;
+}
+
+/* mainScreen Css */
+
+.top{
+  width:100vw;
+  height: 62px;
+  background-color: rgb(255, 255, 255);
+}
+
+.mainscreen{
+  margin:auto auto;
+}
+
+.mainscreen .videos{
+  display: flex;
+  margin-left: 30px;
+  margin-bottom:5rem ;
+  margin-top: 20px;
+}
+.mainscreen .videos span{
+  font-size: 17px;
+  color: rgb(25, 57, 88);
+}
+
+
+
+.mainscreen .inputinfo{
+  position: absolute;
+  margin: auto 20%;
+}
+
+.mainscreen .inputinfo p{
+  text-align: center;
+  padding: 20px;
+}
+
+
+.mainscreen .inputinfo .url{
+  width: 40rem;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  outline: none;
+}
+
+.mainscreen .inputinfo .upload{
+  width:150px;
+  height:150px;
+  text-align: center;
+  margin: 30px;
+  border: none;
+  outline: none;
+}
+
+
+
+
